@@ -26,6 +26,8 @@ Playlist: https://www.youtube.com/playlist?list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4q
 
 
 ## Como jogar
+Para iniciar o jogo, insira o comando java -jar RunGame.jar (O JDK do Java deve estar instalado no seu computador)
+
 Pressione `W`, `A`, `S`, `D` para se mover para cima, esquerda, baixo e direita, respectivamente. Se você possuir munição, aperte `Space` para atirar. Para pausar o jogo, pressione a tecla `P`, e para reiniciar uma fase, pressione a tecla `R`. Para reiniciar o jogo desde a primeira fase, pressione `I` e feche a janela. Ao reabrir, você iniciará na primeira fase.
 
 Pode ser que aconteça algum erro de importação de classes. Caso aconteça, dê "clean" no projeto e depois "run", que o jogo deve funcionar normalmente.

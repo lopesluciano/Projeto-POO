@@ -80,6 +80,7 @@ public class UI {//Classe responsavel por desenhar informacoes na tela
 			g2.setFont(arial_80B);
 			g2.setColor(Color.yellow);
 			text = "FIM";
+			gp.playSE(3);
 			textLength = (int)g2.getFontMetrics().getStringBounds(text, g2).getWidth();
 			
 			x = gp.screenWidth/2 - textLength/2;

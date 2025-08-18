@@ -13,6 +13,8 @@ import entity.Player;
 import entity.Projectile;
 import tile.TileManager;
 
+import main.sound.Sound;
+
 public class GamePanel extends JPanel implements Runnable {
 //Essa classe eh responsavel pelo controle do fluxo de jogo
 
@@ -60,6 +62,10 @@ public class GamePanel extends JPanel implements Runnable {
 	int playerY = 100;
 	int playerSpeed = 4;
 	
+	// Sons
+    public Sound music = new Sound();
+    public Sound se = new Sound(); // Sound Effect
+	
 	public GamePanel() {
 		
 		this.setPreferredSize(new Dimension(screenWidth, screenHeight));
@@ -77,6 +83,8 @@ public class GamePanel extends JPanel implements Runnable {
 		monsterSetter.setMonsters();
 		
 		gameState = playState;
+		
+	    // playMusic(0); // Start background music
 	}
 
 	public void startGameThread() {//Inicia a thread do jogo
@@ -86,6 +94,7 @@ public class GamePanel extends JPanel implements Runnable {
 	}
 	
 	public void resetGame() {//Reseta a fase
+		playSE(4);
 		player.setDefaultValues();
 		setupGame();
 		
@@ -190,5 +199,21 @@ public class GamePanel extends JPanel implements Runnable {
 		
 		g2.dispose();
 	}
+	
+    public void playMusic(int i) {
+        music.setFile(i);
+        music.play();
+        music.loop();
+    }
+
+    public void stopMusic() {
+        music.stop();
+    }
+
+    public void playSE(int i) {
+        se.setFile(i);
+        se.play();
+    }
+    
 	
 }

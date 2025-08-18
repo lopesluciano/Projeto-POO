@@ -214,6 +214,7 @@ public class Player extends Entity {//Esta classe define os parametros do jogado
 			projectile = new OBJ_Eggshot(this.gp);
 			projectile.set(this.x, this.y, this.direction, this);
 			gp.projectileList.add(projectile);
+			gp.playSE(2); // Som do tiro
 			
 		}
 		
@@ -236,6 +237,7 @@ public class Player extends Entity {//Esta classe define os parametros do jogado
 			
 			case "Key":
 				if(gp.currentMap == 0) shotCount += 2;
+				gp.playSE(1); // Play coin sound
 				keyCount += 1;
 				gp.obj[gp.currentMap][i] = null;
 				break;

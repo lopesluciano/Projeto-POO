@@ -33,3 +33,11 @@ Pressione `W`, `A`, `S`, `D` para se mover para cima, esquerda, baixo e direita,
 Pode ser que aconteça algum erro de importação de classes. Caso aconteça, dê "clean" no projeto e depois "run", que o jogo deve funcionar normalmente.
 
 > Quaisquer problemas para rodar o jogo, entre em contato conosco!
+
+## Screenshots 
+
+<p align="left">
+  <img src="Sprites(ALL)/Screenshot1.png" alt="Eggerland Mystery" width="300">
+  <img src="Sprites(ALL)/Screenshot2.png" alt="Eggerland Mystery" width="300">
+  <img src="Sprites(ALL)/Screenshot3.png" alt="Eggerland Mystery" width="300">
+</p>
